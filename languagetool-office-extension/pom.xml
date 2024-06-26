@@ -2,16 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.languagetool</groupId>
-        <artifactId>languagetool-parent</artifactId>
-        <version>${revision}</version>
-    </parent>
+    <groupId>org.languagetool</groupId>
+    <version>6.4</version>
 
     <artifactId>languagetool-office-extension</artifactId>
     <packaging>jar</packaging>
-    <name>LanguageTool LibreOffice/OpenOffice extension</name>
-    <url>https://www.languagetool.org</url>
+    <name>LibreOffice/OpenOffice extension (based on LanguageTool)</name>
 
     <licenses>
         <license>
@@ -21,29 +17,16 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <name>Daniel Naber</name>
-            <roles>
-                <role>Maintainer</role>
-            </roles>
-        </developer>
-        <developer>
-            <name>Marcin Miłkowski</name>
-            <roles>
-                <role>Maintainer</role>
-            </roles>
-        </developer>
-    </developers>
-
     <dependencies>
         <dependency>
             <groupId>org.languagetool</groupId>
             <artifactId>language-all</artifactId>
+            <version>6.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.languagetool</groupId>
             <artifactId>languagetool-core</artifactId>
+            <version>6.5-SNAPSHOT</version>
             <exclusions>
                 <exclusion>
                     <groupId>com.optimaize.languagedetector</groupId>
@@ -54,34 +37,41 @@
         <dependency>
             <groupId>org.languagetool</groupId>
             <artifactId>languagetool-gui-commons</artifactId>
+            <version>6.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.languagetool</groupId>
             <artifactId>languagetool-http-client</artifactId>
+            <version>6.3</version>
         </dependency>
         <dependency>
             <groupId>org.openoffice</groupId>
             <artifactId>juh</artifactId>
+            <version>4.1.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.openoffice</groupId>
             <artifactId>jurt</artifactId>
+            <version>4.1.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.openoffice</groupId>
             <artifactId>ridl</artifactId>
+            <version>4.1.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.openoffice</groupId>
             <artifactId>unoil</artifactId>
+            <version>4.1.2</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
