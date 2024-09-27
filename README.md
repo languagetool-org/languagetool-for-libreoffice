@@ -1,7 +1,10 @@
-# LanguageTool
+# LanguageTool for LibreOffice
 
-**A proofreading add-on for English, Spanish, German, French, Portuguese, Dutch, Ukrainian
-and [more languages](https://dev.languagetool.org/languages)**
+A proofreading add-on for English, Spanish, German, French, Portuguese, Dutch, Ukrainian
+and [more languages](https://dev.languagetool.org/languages)
+
+**Note** this repo is not actively maintained anymore. See https://writingtool.org
+for an alternative
 
 Version 6.5-SNAPSHOT (2024-xx-yy)  
 Copyright (C) 2005-2024 the LanguageTool community and Daniel Naber (www.danielnaber.de)  
